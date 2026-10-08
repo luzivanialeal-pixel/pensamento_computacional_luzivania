@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <style>
+        header {
+            background-color: #95bfee;
+            padding: 16px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        h2, p {
+            color: #07418d;
+            font-weight: bold;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu blog Filmes</h1>
+        <p>Vou compartilhar conhecimentos sobre filmes.</p>
+    </header>
+
+    <main>
+
+        <article>
+            <img src="https://i.pinimg.com/736x/29/9f/a4/299fa47a6916d460f74d25a1a45be37c.jpg" alt="Alice">
+
+            <div>
+                <h2>Meu primeiro post</h2>
+
+                <p>Por: 🌸𝑳𝒖𝒛𝒊𝒗𝒂𝒏𝒊𝒂</p>
+
+                <p>
+                    Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas sobre o filme.
+                    Alice é uma menina curiosa que entra em um mundo mágico cheio de criaturas
+                    fantásticas e lugares surpreendentes. Durante sua aventura, ela enfrenta
+                    desafios, conhece personagens diferentes e precisa usar sua coragem e
+                    imaginação para encontrar o caminho de volta para casa. O filme mostra a
+                    importância da curiosidade, da amizade e de acreditar em si mesma.
+                </p>
+
+                <button class="botao">❤️ <span>0</span></button>
+                <button class="botao">👍 <span>0</span></button>
+            </div>
+        </article>
+
+
+        <article>
+            <img src="https://i.pinimg.com/736x/29/9f/a4/299fa47a6916d460f74d25a1a45be37c.jpg" alt="Alice">
+
+            <div>
+                <h2>Meu segundo post</h2>
+
+                <p>Por: 🌸𝑳𝒖𝒛𝒊𝒗𝒂𝒏𝒊𝒂</p>
+
+                <p>
+                    Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas sobre o filme.
+                    Alice é uma menina curiosa que entra em um mundo mágico cheio de criaturas
+                    fantásticas e lugares surpreendentes. Durante sua aventura, ela enfrenta
+                    desafios, conhece personagens diferentes e precisa usar sua coragem e
+                    imaginação para encontrar o caminho de volta para casa. O filme mostra a
+                    importância da curiosidade, da amizade e de acreditar em si mesma.
+                </p>
+
+                <button class="botao">❤️ <span>0</span></button>
+                <button class="botao">👍 <span>0</span></button>
+            </div>
+        </article>
+
+    </main>
+
+    <script>
+        const botoes = document.querySelectorAll(".botao");
+
+        botoes.forEach(function (botao) {
+            botao.addEventListener("click", function () {
+
+                let texto = botao.querySelector("span");
+
+                texto.textContent = Number(texto.textContent) + 1;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
